@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="restuarant2.css">
+</head>
+<body>
+    <header>
+        <h1>Rasa Kunj</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order">Order Now</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#reserve">Reserve a Table</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div id="menu-items">
+            <!-- Menu items will be dynamically added here -->
+        </div>
+    </section>
+
+   
+    
+
+    <section id="specialties">
+        <h2>Specialties</h2><!-- Add your image here -->
+        <p>Check out our amazing specialties!</p>
+        <div>
+        <img src="mar.jpeg" alt="Specialty Dish" class="specialty-image">
+        <img src="pasta-carbonara.jpeg" alt="Specialty Dish" class="specialty-image">
+        <img src="mar.jpeg" alt="Specialty Dish" class="specialty-image">
+        <img src="pepperoni.jpeg" alt="Specialty Dish" class="specialty-image">
+        <img src="caesar-salad.jpeg" alt="Specialty Dish" class="specialty-image">
+        <img src="lasagna.jpeg" alt="Specialty Dish" class="specialty-image">
+    </div>
+    
+    </section>
+    
+
+    <section id="order">
+        <h2>Place Your Order</h2>
+        <form id="orderForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="dish">Select Dish:</label>
+            <select id="dish" name="dish" required>
+                <!-- Options will be dynamically added here -->
+            </select>
+            
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+
+            <button type="submit">Order Now</button>
+        </form>
+        <p id="orderConfirmation"></p>
+    </section>
+
+    <section id="reserve">
+        <h2>Reserve a Table</h2>
+        <form id="reservationForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+            
+            <label for="seats">Number of Seats:</label>
+            <input type="number" id="seats" name="seats" min="1" max="10" required>
+            
+            <button type="submit">Reserve Table</button>
+        </form>
+        <p id="reservationConfirmation"></p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@rasakunj.com</p>
+        <p>Phone: 123-456-7890</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Rasa Kunj, Mumbai, India. All Rights Reserved.</p>
+    </footer>
+
+    <script src="restuarant2.js"></script>
+</body>
+</html>
